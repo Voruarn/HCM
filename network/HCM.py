@@ -40,20 +40,20 @@ class CFFD(nn.Module):
         self.gf1=GatedFusion(in_ch)
         self.fuse_conv1=nn.Sequential(
             Conv(in_ch*2, in_ch),
-            Block(in_ch, in_ch)
+            Block(in_ch)
         )
         self.gf2=GatedFusion(in_ch)
         self.fuse_conv2=nn.Sequential(
             Conv(in_ch*2, in_ch),
-            Block(in_ch, in_ch)
+            Block(in_ch)
         )
         self.gf3=GatedFusion(in_ch)
         self.fuse_conv3=nn.Sequential(
             Conv(in_ch*2, in_ch),
-            Block(in_ch, in_ch)
+            Block(in_ch)
         )
         self.gf4=GatedFusion(in_ch)
-        self.fuse_conv4=Block(in_ch, out_ch)
+        self.fuse_conv4=Block(in_ch)
         
 
 
